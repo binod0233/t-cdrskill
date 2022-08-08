@@ -1,0 +1,41 @@
+.upperFooter {
+  background-color: #E5E5E5;
+  padding: 40px;
+  color:  #203546;
+  ;
+}
+.footerServices {
+  text-decoration: none;
+  color: #747474;
+}
+.footerServices:hover {
+  color: #203546;
+}
+.lowerFooter {
+  background-color: #203546
+  ;
+  font-family: Arial;
+  padding: 20px 0 10px 50px;
+  font-weight: 700;
+  font-size: 22px;
+}
+@media screen and (max-width: 600px) {
+  .footerServices {
+    font-size: 10px;
+  }
+  .footerAboutUs {
+    font-size: 10px;
+  }
+  .lowerFooter {
+    font-size: 10px;
+  }
+  .footerTitle {
+    font-size: 10px;
+  }
+  .upperFooter {
+    font-size: 10px;
+  }
+  .wholeFooter{
+    width:97.5%
+  }
+}

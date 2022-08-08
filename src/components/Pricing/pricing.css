@@ -1,0 +1,29 @@
+.changeToYellow:hover{
+    border-top:2px solid #FFAD05 !important;
+    transform: scale(1.03);
+}
+
+
+
+.changeToBlue:hover{
+    border-top:2px solid #017CC9 !important;
+    transform: scale(1.03);
+}
+
+
+
+.changeToRed:hover{
+    border-top:2px solid #D63E3E  !important;
+    transform: scale(1.03);}
+
+
+.changeToGreen:hover{
+    border-top:2px solid #049213  !important;
+    transform: scale(1.03);}
+
+@media screen and (max-width: 600px) {
+.spanfontSize{
+    font-size: 10px !important;
+}
+
+}

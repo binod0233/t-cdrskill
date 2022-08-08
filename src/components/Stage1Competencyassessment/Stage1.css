@@ -1,0 +1,10 @@
+
+
+@media screen and (max-width: 600px) {
+    .stage1123Image{
+        display: none;
+    }
+    .stepsOneImage{
+        height:100px !important
+    }
+}

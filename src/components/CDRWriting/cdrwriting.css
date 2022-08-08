@@ -1,0 +1,15 @@
+@media screen and (max-width: 600px) {
+    .ourCDRServicesParagraph{
+font-size: 10px !important;
+    }
+    .ourCDRServicesTitle{
+        font-size: 12px !important;
+
+    }
+    .thousandsCard{
+        height: 300px !important;
+    }
+    .searchInputField{
+        width: 300px !important;
+    }
+}
