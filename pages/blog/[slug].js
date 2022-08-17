@@ -27,7 +27,6 @@ const SpecificBlog = ({ resBlogData }) => {
     (router.asPath === "/" ? "" : router.asPath)
   ).split("?")[0];
 
-
   const submitFormhandler = (e) => {
     e.preventDefault();
 
@@ -92,7 +91,7 @@ const SpecificBlog = ({ resBlogData }) => {
 
               <Row>
                 <Col md={7}>
-                  <h1
+                  <h2
                     style={{
                       color: "#203546",
                       fontFamily: "Century Gothic",
@@ -101,7 +100,7 @@ const SpecificBlog = ({ resBlogData }) => {
                     className="pt-5"
                   >
                     Is this information helpful?
-                  </h1>
+                  </h2>
                   <p style={{ color: "#666", fontFamily: "Asap" }}>
                     {" "}
                     We have tried to make you understand by answering your
@@ -354,7 +353,17 @@ const SpecificBlog = ({ resBlogData }) => {
           <Seo seo={resBlogData?.attributes?.seo} />
           <Container>
             <div className="p-5">
-              <Headings title={resBlogData?.attributes?.title} />
+              <h1
+                className="headingTitle"
+                style={{
+                  color: "#203546",
+                  fontFamily: "Century Gothic",
+                  fontWeight: "700",
+                  fontSize: "34x",
+                }}
+              >
+                {resBlogData?.attributes?.title}
+              </h1>
 
               <Row>
                 <Image
@@ -380,7 +389,7 @@ const SpecificBlog = ({ resBlogData }) => {
 
               <Row>
                 <Col md={7}>
-                  <h1
+                  <h2
                     style={{
                       color: "#203546",
                       fontFamily: "Century Gothic",
@@ -389,7 +398,7 @@ const SpecificBlog = ({ resBlogData }) => {
                     className="pt-5"
                   >
                     Is this information helpful?
-                  </h1>
+                  </h2>
                   <p style={{ color: "#666", fontFamily: "Asap" }}>
                     {" "}
                     We have tried to make you understand by answering your

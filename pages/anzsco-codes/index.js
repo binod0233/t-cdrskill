@@ -6,14 +6,34 @@ import SamplesList from "../../components/Anzsco/AnzoList";
 import Headings from "../../components/Headings";
 import Hero2 from "../../components/Hero2";
 import Paragraphs from "../../components/Paragraphs";
+import Head from "next/head";
+import { useRouter } from "next/router";
 
 const Anzsco = () => {
+  const router = useRouter();
+  const canonicalUrl = (
+    `https://cdrskillassessment.com` +
+    (router.asPath === "/" ? "" : router.asPath)
+  ).split("?")[0];
   return (
     <div className="">
       {/* <Meta
         title="Engineer Australia ANZSCO | CDR Skill Assessment"
         description="Learn about various ANZSCO codes used for classifications of occupations and select the appropriate ANZSCO code that matches your career."
       /> */}
+      <Head>
+        <title>Engineer Australia ANZSCO | CDR Skill Assessment</title>
+        <meta
+          property="title"
+          content="Engineer Australia ANZSCO | CDR Skill Assessment"
+        />
+
+        <meta
+          name="description"
+          content="Learn about various ANZSCO codes used for classifications of occupations and select the appropriate ANZSCO code that matches your career."
+        />
+        <link rel="canonical" href={canonicalUrl} />
+      </Head>
       <Section1
         title="Engineers Australia ANZSCO Code for CDR"
         data="The Australian and New Zealand Standard Classification of Engineer’s occupations (ANZSCO) Codes define work duties for 
