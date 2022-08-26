@@ -1,13 +1,14 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import Section1 from "../../components/CDRWriting/Section1";
+import Head from "next/head";
+import { useRouter } from "next/router";
+
 // import Meta from "../../components/Meta";
 import SamplesList from "../../components/Anzsco/AnzoList";
 import Headings from "../../components/Headings";
 import Hero2 from "../../components/Hero2";
 import Paragraphs from "../../components/Paragraphs";
-import Head from "next/head";
-import { useRouter } from "next/router";
 
 const Anzsco = () => {
   const router = useRouter();
@@ -15,6 +16,7 @@ const Anzsco = () => {
     `https://cdrskillassessment.com` +
     (router.asPath === "/" ? "" : router.asPath)
   ).split("?")[0];
+
   return (
     <div className="">
       {/* <Meta
@@ -23,11 +25,6 @@ const Anzsco = () => {
       /> */}
       <Head>
         <title>Engineer Australia ANZSCO | CDR Skill Assessment</title>
-        <meta
-          property="title"
-          content="Engineer Australia ANZSCO | CDR Skill Assessment"
-        />
-
         <meta
           name="description"
           content="Learn about various ANZSCO codes used for classifications of occupations and select the appropriate ANZSCO code that matches your career."

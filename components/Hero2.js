@@ -1,13 +1,13 @@
 import Chatra from "@chatra/chatra";
 import React from "react";
 import { Button, Container, Row } from "react-bootstrap";
-import { useRouter } from "next/router";
+import {useRouter} from 'next/router'
 const Hero2 = ({ title, data, buttonName, link }) => {
-  const router = useRouter();
+  const router = useRouter()
   return (
     <div className="acceptedBackgrounded ">
       <Container className="pt-3">
-        <h2 className="CDRReportAcceptedHeading">{title}</h2>
+        <h1 className="CDRReportAcceptedHeading">{title}</h1>
         <p className="CDRReportAcceptParagraph">{data}</p>
         <Row className="d-flex justify-content-center">
           <Button

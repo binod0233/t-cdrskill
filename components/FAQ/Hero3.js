@@ -1,13 +1,13 @@
 import React from "react";
 import { Button, Container, Row } from "react-bootstrap";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import FacebookIcon from "@mui/icons-material/Facebook";
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import FacebookIcon from '@mui/icons-material/Facebook';
 
 const Hero3 = ({ title, data, buttonName1, buttonName2 }) => {
   return (
     <div className="acceptedBackgrounded ">
       <Container className="pt-3">
-        <h2 className="CDRReportAcceptedHeading">{title}</h2>
+        <h1 className="CDRReportAcceptedHeading">{title}</h1>
         <p className="CDRReportAcceptParagraph">{data}</p>
         <Row className="d-flex justify-content-center">
           <Button
@@ -29,7 +29,7 @@ const Hero3 = ({ title, data, buttonName1, buttonName2 }) => {
               style={{ color: "white", textDecoration: "none" }}
             >
               <WhatsAppIcon />
-              {buttonName1}
+             {buttonName1}
             </a>
           </Button>
           <Button

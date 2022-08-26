@@ -16,7 +16,6 @@ const SpecificAnzsco = () => {
     `https://cdrskillassessment.com` +
     (router.asPath === "/" ? "" : router.asPath)
   ).split("?")[0];
-  console.log("anzco", anzsco);
 
   const allData = {
     engineeringManager: {
@@ -122,8 +121,8 @@ const SpecificAnzsco = () => {
       occupationsTitle: `Occupations in this Group.`,
       occupationDescription: (
         <div>
-          • Chemical engineer ANZSCO code 233111 <br />• Material Engineer
-          ANZSCO code 233112
+          • Chemical engineer ANZSCO code 233111 <br />
+          • Material Engineer ANZSCO code 233112
         </div>
       ),
       exceptionstitle: "Exceptions",
@@ -527,11 +526,9 @@ const SpecificAnzsco = () => {
       secondTitle: `Skill Assessment Authority`,
       secondDescription: `EA (Engineers Australia) / AIM`,
       thirdTitle: `Specialisations of Civil Engineer:`,
-      thirdDescription: [
-        `Airfield Engineer Officer (Air Force)
+      thirdDescription: [`Airfield Engineer Officer (Air Force)
       Hydraulics Engineer
-      `,
-      ],
+      `],
       occupationTitle: `On the Occupation Lists`,
       occupationList: [
         `489 (S/T) Occupations List
@@ -3519,11 +3516,10 @@ const SpecificAnzsco = () => {
       occupationsTitle: `Occupations in this Group`,
       occupationDescription: (
         <div>
-          • 313211 Radiocommunications Technician. <br />
-          • 313212 Telecommunications
-          <br />
-          Field Engineer. <br />
-          • 313213 Telecommunications Network Planner. <br />
+          • 313211 Radiocommunications Technician. <br/>
+          • 313212 Telecommunications<br/>
+          Field Engineer. <br/>
+          • 313213 Telecommunications Network Planner. <br/>
           • 313214 Telecommunications Technical Officer or Technologist.
           <br />
         </div>
@@ -3680,10 +3676,6 @@ const SpecificAnzsco = () => {
           <Head>
             <title>Engineering Manager | Unit Group 1332 | ANZSCO 133211</title>
             <meta
-              property="title"
-              content="Engineering Manager | Unit Group 1332 | ANZSCO 133211"
-            />
-            <meta
               name="description"
               content="Engineering Manager | Unit Group 1332 | ANZSCO 133211"
             />
@@ -3693,10 +3685,6 @@ const SpecificAnzsco = () => {
         {anzsco === "anzsco-233111-chemical-engineer" && (
           <Head>
             <title>Chemical Engineer | Unit Group 2331 | ANZSCO 233111</title>
-            <meta
-              property="title"
-              content="Chemical Engineer | Unit Group 2331 | ANZSCO 233111"
-            />
             <meta
               name="description"
               content="Occupational Unit Group 2331 Chemical and Materials Engineer. ANZSCO 233111 PR Visa for Chemical Engineer."
@@ -3710,15 +3698,6 @@ const SpecificAnzsco = () => {
             <meta
               name="description"
               content="Occupational Unit Group 2332 Civil Engineering Professionals. ANZSCO 233211 PR Visa for Civil Engineer."
-            />
-            <link rel="canonical" href={canonicalUrl} />
-          </Head>
-        )} {anzsco === "anzsco-233112-materials-engineer" && (
-          <Head>
-            <title>Material Engineer ANZSCO 233211</title>
-            <meta
-              name="description"
-              content="Occupational Unit Group 2332 Material Engineering Professionals. ANZSCO 233112 PR Visa for Material Engineer."
             />
             <link rel="canonical" href={canonicalUrl} />
           </Head>
@@ -3887,7 +3866,7 @@ ANZSCO 233411 PR Visa for Electronics Engineer."
             <link rel="canonical" href={canonicalUrl} />
           </Head>
         )}
-        {anzsco === "anzsco-263111-computer-networks-and-system-engineers" && (
+        {anzsco === "computer-networks-and-system-engineers-anzsco-263111" && (
           <Head>
             <title>Computer Network and Systems Engineers ANZSCO 263111</title>
             <meta
@@ -3897,7 +3876,7 @@ ANZSCO 233411 PR Visa for Electronics Engineer."
             <link rel="canonical" href={canonicalUrl} />
           </Head>
         )}{" "}
-        {anzsco === "anzsco-263311-telecommunication-engineers" && (
+        {anzsco === "telecommunication-engineers-anzsco-263311" && (
           <Head>
             <title>Telecommunications Engineer ANZSCO 263311</title>
             <meta
@@ -3907,7 +3886,7 @@ ANZSCO 233411 PR Visa for Electronics Engineer."
             <link rel="canonical" href={canonicalUrl} />
           </Head>
         )}{" "}
-        {anzsco === "anzsco-313212-telecommunication-network-engineers" && (
+        {anzsco === "telecommunication-network-engineers-anzsco-263312" && (
           <Head>
             <title>Telecommunications Network Engineers ANZSCO 263312</title>
             <meta
@@ -3917,7 +3896,7 @@ ANZSCO 233411 PR Visa for Electronics Engineer."
             <link rel="canonical" href={canonicalUrl} />
           </Head>
         )}{" "}
-        {anzsco === "anzsco-312211-civil-engineering-draftsperson" && (
+        {anzsco === "civil-engineering-draftsperson-anzsco-312211" && (
           <Head>
             <title>Civil Engineering Draftsperson ANZSCO 312211</title>
             <meta
@@ -3927,7 +3906,7 @@ ANZSCO 233411 PR Visa for Electronics Engineer."
             <link rel="canonical" href={canonicalUrl} />
           </Head>
         )}{" "}
-        {anzsco === "anzsco-312212-civil-engineering-technician" && (
+        {anzsco === "civil-engineering-technician-anzsco-312212" && (
           <Head>
             <title>Civil Engineering Technician ANZSCO 312212</title>
             <meta
@@ -3937,7 +3916,7 @@ ANZSCO 233411 PR Visa for Electronics Engineer."
             <link rel="canonical" href={canonicalUrl} />
           </Head>
         )}{" "}
-        {anzsco === "anzsco-312311-electrical-engineering-draftsperson" && (
+        {anzsco === "electrical-engineering-draftsperson-anzsco-312311" && (
           <Head>
             <title>Electrical Engineering Draftsperson ANZSCO 312311</title>
             <meta
@@ -3947,7 +3926,7 @@ ANZSCO 233411 PR Visa for Electronics Engineer."
             <link rel="canonical" href={canonicalUrl} />
           </Head>
         )}{" "}
-        {anzsco === "anzsco-312312-electrical-engineering-technician" && (
+        {anzsco === "electrical-engineering-technician-anzsco-312312" && (
           <Head>
             <title>Electrical Engineering Technician ANZSCO 312312</title>
             <meta
@@ -3957,7 +3936,7 @@ ANZSCO 233411 PR Visa for Electronics Engineer."
             <link rel="canonical" href={canonicalUrl} />
           </Head>
         )}
-        {anzsco === "anzsco-313212-telecommunication-field-engineer" && (
+        {anzsco === "telecommunication-field-engineer-anzsco-313212" && (
           <Head>
             <title>Telecommunications Field Engineer ANZSCO 313212</title>
             <meta
@@ -3965,64 +3944,6 @@ ANZSCO 233411 PR Visa for Electronics Engineer."
               content="Occupational Unit Group 3132 Telecommunications Technical 
 
 Specialists. ANZSCO 313212PR Visa for Telecommunications Field Engineer."
-            />
-            <link rel="canonical" href={canonicalUrl} />
-          </Head>
-        )}
-        {anzsco === "anzsco-312411-electronics-draftsperson" && (
-          <Head>
-            <title>Electronic Field Engineer ANZSCO 313212</title>
-            <meta
-              name="description"
-              content="Occupational Unit Group 3132 Electronics DraftPerson
-
-Specialists. ANZSCO 312411 Visa for Electronics Field Engineer."
-            />
-            <link rel="canonical" href={canonicalUrl} />
-          </Head>
-        )}
-        {anzsco === "anzsco-233916-naval-architect" && (
-          <Head>
-            <title>Naval Field Engineer ANZSCO 233916</title>
-            <meta
-              name="description"
-              content="Occupational Unit Group 3132 Naval . ANZSCO 233916 PR Visa for Telecommunications Field Engineer."
-            />
-            <link rel="canonical" href={canonicalUrl} />
-          </Head>
-        )}
-        {anzsco === "anzsco-313213-telecommunications-network-planner" && (
-          <Head>
-            <title>Telecommunications Network Planner ANZSCO 313213</title>
-            <meta
-              name="description"
-              content="Occupational Unit Group 3132 Telecommunications Technical 
-
-Specialists. ANZSCO 313213PR Visa for Telecommunications Network Planner."
-            />
-            <link rel="canonical" href={canonicalUrl} />
-          </Head>
-        )}
-        {anzsco === "anzsco-313212-telecommunication-technologist" && (
-          <Head>
-            <title>Telecommunications technologist ANZSCO 313212</title>
-            <meta
-              name="description"
-              content="Occupational Unit Group 3132 Telecommunications Technical 
-
-Specialists. ANZSCO 313212PR Visa for Telecommunications technologist."
-            />
-            <link rel="canonical" href={canonicalUrl} />
-          </Head>
-        )}
-        {anzsco === "anzsco-312999-engineering-technician" && (
-          <Head>
-            <title>Engineering Technician ANZSCO 312999</title>
-            <meta
-              name="description"
-              content="Occupational Unit Group 3132 Telecommunications Technical 
-
-Specialists. ANZSCO 312999PR Visa for Engineering Technician."
             />
             <link rel="canonical" href={canonicalUrl} />
           </Head>
@@ -4354,7 +4275,7 @@ Specialists. ANZSCO 312999PR Visa for Engineering Technician."
                   style={{ height: "20px", width: "20px", float: "right" }}
                   src="/images/Vector.png"
                   alt="hat"
-                />
+                /> 
                 <Paragraphs data={l} />
               </Stack>
             ))}
@@ -4379,6 +4300,7 @@ Specialists. ANZSCO 312999PR Visa for Engineering Technician."
             title={allData.transportEngineer.exceptionstitle}
             list={allData.transportEngineer.exceptions}
           />
+
 
           <Expectations
             title={allData.transportEngineer.tasktitle}
