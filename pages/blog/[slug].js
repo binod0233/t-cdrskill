@@ -155,7 +155,8 @@ const SpecificBlog = ({ resBlogData, resData }) => {
                   >
                     {" "}
                     <AddIcon />
-                    {resBlogData?.attributes?.title}
+                    //{resBlogData?.attributes?.title}
+                    Table of Content
                   </span>
                 </Accordion.Header>
                 <Accordion.Body>
