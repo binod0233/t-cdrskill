@@ -29,6 +29,7 @@ const Landing = ({ landingRes, test }) => {
   const step = { step: landingRes?.steps, steps: landingRes?.step };
   const faq = { faq: landingRes?.faq, faq_data: landingRes?.faq_data };
 
+  // console.log("test", test);
   return (
     <div>
       {/* <Head>
@@ -61,8 +62,9 @@ const Landing = ({ landingRes, test }) => {
 };
 
 export const getStaticProps = async () => {
+  const { NEXT_STRAPI_API_URL } = process.env;
 
-  const landing = await fetch("https://cdrskill.herokuapp.com/api/landing?populate=deep");
+  const landing = await fetch(NEXT_STRAPI_API_URL + "landing?populate=deep");
 
   const landingRes = await landing.json();
 
@@ -76,6 +78,7 @@ export const getStaticProps = async () => {
       landingRes: landingRes?.data?.attributes,
       test: testRes,
     },
+    
   };
 };
 

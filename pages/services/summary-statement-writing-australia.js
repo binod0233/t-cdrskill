@@ -18,7 +18,6 @@ const SummaryStatementWriting = ({ summaryRes }) => {
   ).split("?")[0];
 
   const { hero, prepare, seo, shared } = summaryRes;
-  console.log("summaryRes", summaryRes);
   return (
     <div>
       {/* <Head>
@@ -65,7 +64,7 @@ export const getStaticProps = async () => {
     props: {
       summaryRes: summaryRes?.data?.attributes || "",
     },
-    revalidate: 1,
+    
   };
 };
 

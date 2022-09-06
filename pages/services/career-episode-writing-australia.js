@@ -67,7 +67,7 @@ export const getStaticProps = async () => {
     props: {
       careerRes: careerRes?.data?.attributes || "",
     },
-    revalidate: 1,
+    
   };
 };
 

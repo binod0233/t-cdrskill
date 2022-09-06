@@ -74,8 +74,9 @@ const SpecificBlog = ({ resBlogData, resData }) => {
   // console.log("data", parse(resBlogData.attributes.content));
 
   return (
-    <div className="">
+    <div>
       <div
+        className="py-3"
         style={{
           backgroundImage: `url(https://res.cloudinary.com/copenned/image/upload/v1659366267/small_her_9ad2b6da87.png)`,
           backgroundSize: "cover",
@@ -103,13 +104,13 @@ const SpecificBlog = ({ resBlogData, resData }) => {
           </h1>
           <Row xs={2} md={4} lg={4}>
             <Col className=" ">
-              <p className="">
+              <p>
                 <FiberManualRecordIcon color="primary" />
                 Last Updated :{"1hrs ago "}
               </p>
             </Col>
             <Col className=" ">
-              <p className="">
+              <p>
                 <GridViewIcon color="primary" />
                 Australia Migration
               </p>
@@ -120,31 +121,22 @@ const SpecificBlog = ({ resBlogData, resData }) => {
       </div>
       <Container style={{ backgroundColor: "" }}>
         <Row className="container">
-          <Col sm={8} className=" pe-5 ">
-            <div
+          <Col sm={8} className="p-1 ">
+            <Card.Img
+              variant="top"
+              src={resBlogData?.attributes?.image?.data?.attributes?.url}
               style={{
-                fontFamily: "Arial",
-                fontWeight: "400",
-                fontSize: "19px",
-                lineHeight: "21.52px",
-                backgroundColor: "#2D495F",
-                color: "white",
                 marginTop: "15px",
                 marginBottom: "-2px",
                 padding: "10px",
               }}
-            >
-              Home /Blogs /{""}
-              {resBlogData?.attributes?.title}
-            </div>
-            <Card.Img
-              variant="top"
-              src={resBlogData?.attributes?.image?.data?.attributes?.url}
             />
             <Accordion>
               <Accordion.Item eventKey="0">
                 <Accordion.Header>
+                  <AddIcon />
                   <span
+                    className="ms-2"
                     style={{
                       fontFamily: "Arial",
                       fontWeight: "700",
@@ -153,9 +145,6 @@ const SpecificBlog = ({ resBlogData, resData }) => {
                       color: "#203546",
                     }}
                   >
-                    {" "}
-                    <AddIcon />
-                    //{resBlogData?.attributes?.title}
                     Table of Content
                   </span>
                 </Accordion.Header>
@@ -163,14 +152,10 @@ const SpecificBlog = ({ resBlogData, resData }) => {
                   {resBlogData?.attributes?.content &&
                     parse(resBlogData?.attributes?.content).map(
                       (item, index) => (
-                        <>
+                        <div key={item.key}>
                           {item.type === "h2" && (
                             <>
-                              <Link
-                                key={item.key}
-                                id={item.key}
-                                href={`#${item.key}`}
-                              >
+                              <Link id={item.key} href={`#${item.key}`}>
                                 <a style={{ color: "#203546" }}>
                                   {
                                     parse(resBlogData.attributes.content)[
@@ -182,7 +167,7 @@ const SpecificBlog = ({ resBlogData, resData }) => {
                               <br />
                             </>
                           )}
-                        </>
+                        </div>
                       )
                     )}
                 </Accordion.Body>
@@ -191,9 +176,9 @@ const SpecificBlog = ({ resBlogData, resData }) => {
 
             {resBlogData?.attributes?.content &&
               parse(resBlogData?.attributes?.content).map((item, index) => (
-                <>
+                <div key={item.key}>
                   {item.type === "h2" ? (
-                    <div key={item.key}>
+                    <div>
                       <h2
                         id={item.key}
                         style={{
@@ -210,7 +195,7 @@ const SpecificBlog = ({ resBlogData, resData }) => {
                   ) : (
                     <>{parse(resBlogData.attributes.content)[item.key]}</>
                   )}
-                </>
+                </div>
               ))}
           </Col>
           <Col className=" bg-light ">
@@ -244,7 +229,6 @@ const SpecificBlog = ({ resBlogData, resData }) => {
             </Row>
             <Row className=" g-2 mt-2">
               <div
-                className=""
                 style={{
                   fontFamily: "Century Gothic",
                   fontWeight: "700",
@@ -268,7 +252,7 @@ const SpecificBlog = ({ resBlogData, resData }) => {
               >
                 Latest Blog
               </div>
-              <div className="">
+              <div>
                 <div
                   className=" "
                   style={{
@@ -603,11 +587,11 @@ const SpecificBlog = ({ resBlogData, resData }) => {
         >
           Related Articles
         </div>
-        <Row sm={1} md={3} className=" pb-5 ">
+        <Row className=" pb-5  ">
           {resData.map((item, index) => (
             <>
               {index > 3 && index < 7 && (
-                <Col key={item.id}>
+                <Col key={item.id} sm={1} md={4} className="g-3">
                   <>
                     <Stack
                       style={{
@@ -656,7 +640,6 @@ const SpecificBlog = ({ resBlogData, resData }) => {
         </Row>
       </Container>
       <Hero3
-        className=""
         title="Stay connected with CDRskillassessment! Contact us via our Social Channels"
         buttonName1="whatsapp"
         buttonName2="Facebook"
@@ -691,7 +674,7 @@ export async function getStaticProps({ params }) {
   return {
     props: { resBlogData: blogData?.data, resData: blogDatas?.data },
 
-    revalidate: 1,
+    
   };
 }
 

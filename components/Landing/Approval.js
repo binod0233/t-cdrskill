@@ -7,6 +7,7 @@ import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import parse from "html-react-parser";
 const Approval = ({ approvalData }) => {
   const { approval, assure } = approvalData;
+  // console.log("approval", approvalData);
   return (
     <div style={{ background: "#E5E5E5" }}>
       <Container>

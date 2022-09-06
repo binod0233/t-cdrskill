@@ -10,6 +10,7 @@ const Faq = ({ faqData }) => {
   const [thirdActive, setThirdActive] = useState(false);
   const [fourthActive, setFourthActive] = useState(false);
   const { faq, faq_data } = faqData;
+  // console.log("faqData", faq_data);
 
   return (
     <div style={{ backgroundColor: "#E5E5E5" }}>

@@ -97,7 +97,7 @@ export const getStaticProps = async () => {
     props: {
       cdrRes: cdrRes?.data?.attributes || "",
     },
-    revalidate: 1,
+    
   };
 };
 

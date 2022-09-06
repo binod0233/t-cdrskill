@@ -89,6 +89,8 @@ const rows = [
 
 const PricingPlan = ({ plan }) => {
   const [expanded, setExpanded] = useState(false);
+  // const { hero } = pricingRes;
+  // console.log("pricingRes", pricingRes);
 
   const basicList = [
     `3 Career Episode

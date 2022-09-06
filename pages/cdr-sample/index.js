@@ -19,6 +19,7 @@ const Samples = ({ sampleRes }) => {
     `https://cdrskillassessment.com` +
     (router.asPath === "/" ? "" : router.asPath)
   ).split("?")[0];
+  // console.log("sampleRes", sampleRes);
   const { hero, seo, sample, shared, pursuing, positiveassessment, knowmore } =
     sampleRes;
 
@@ -70,6 +71,7 @@ export const getStaticProps = async () => {
     props: {
       sampleRes: sampleRes?.data?.attributes || "",
     },
+    
   };
 };
 

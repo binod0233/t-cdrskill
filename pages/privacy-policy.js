@@ -11,6 +11,7 @@ const PrivacyPolicy = ({ privacyRes }) => {
     `https://cdrskillassessment.com` +
     (router.asPath === "/" ? "" : router.asPath)
   ).split("?")[0];
+  // console.log("privacyRes", privacyRes);
   const { hero, seo, content } = privacyRes;
   return (
     <div>
@@ -73,6 +74,7 @@ export const getStaticProps = async () => {
     props: {
       privacyRes: privacyRes?.data?.attributes || "",
     },
+    
   };
 };
 

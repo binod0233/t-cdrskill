@@ -12,6 +12,7 @@ const Pricing = ({ pricingRes }) => {
     `https://cdrskillassessment.com` +
     (router.asPath === "/" ? "" : router.asPath)
   ).split("?")[0];
+  // console.log("pricingRes", pricingRes);
   const { hero, plan } = pricingRes;
 
   return (
@@ -50,6 +51,7 @@ export const getStaticProps = async () => {
     props: {
       pricingRes: pricingRes?.data?.attributes || "",
     },
+    
   };
 };
 

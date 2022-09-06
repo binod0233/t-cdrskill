@@ -8,6 +8,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import parse from "html-react-parser";
 const Steps = ({ stepData }) => {
   const { steps, step } = stepData;
+  // console.log("stepData", stepData);
 
   const newData = steps.data.map((step, index) => (
     <div key={step.id}>

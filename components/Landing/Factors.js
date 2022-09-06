@@ -60,6 +60,7 @@ const Factors = ({ factor }) => {
   delivering them to a customer.`,
     },
   ];
+  // console.log("Factors", factor.factor_data.data);
 
   return (
     <div style={{ backgroundColor: "#E5E5E5" }}>

@@ -11,6 +11,7 @@ const MeetOurAdvisors = ({ agentRes }) => {
     `https://cdrskillassessment.com` +
     (router.asPath === "/" ? "" : router.asPath)
   ).split("?")[0];
+  // console.log("agentRes", agentRes);
   const { seo } = agentRes;
   return (
     <div>

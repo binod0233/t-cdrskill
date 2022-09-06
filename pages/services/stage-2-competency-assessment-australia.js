@@ -112,7 +112,7 @@ export const getStaticProps = async () => {
     props: {
       stageRes: stageRes?.data?.attributes || "",
     },
-    revalidate: 1,
+    
   };
 };
 

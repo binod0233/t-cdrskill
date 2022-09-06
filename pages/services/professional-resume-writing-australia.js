@@ -21,7 +21,6 @@ const CVResumeWriting = ({ cvRes }) => {
     `https://cdrskillassessment.com` +
     (router.asPath === "/" ? "" : router.asPath)
   ).split("?")[0];
-  console.log("cvRes", cvRes);
   const { hero, seo, ensure, content3, key, shared } = cvRes;
 
   return (
@@ -118,7 +117,7 @@ export const getStaticProps = async () => {
     props: {
       cvRes: cvRes?.data?.attributes || "",
     },
-    revalidate: 1,
+    
   };
 };
 

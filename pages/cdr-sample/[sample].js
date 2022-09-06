@@ -24,9 +24,11 @@ const SpecificSample = ({ sampleData }) => {
     (router.asPath === "/" ? "" : router.asPath)
   ).split("?")[0];
   const allData = SampleD;
+  // console.log("samplesData", sampleData);
 
   const resSampleData = sampleData?.data;
 
+  // console.log("allData", resSampleData?.attributes?.addcontent[0]);
   // if (!router.isFallback && !post?.slug) {
   //   return <ErrorPage statusCode={404} />
   // }
@@ -1317,6 +1319,7 @@ export async function getStaticProps({ params }) {
 
   return {
     props: { sampleData },
+    
   };
 }
 

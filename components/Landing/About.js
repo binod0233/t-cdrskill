@@ -8,6 +8,7 @@ import parse from "html-react-parser";
 const About = ({ about }) => {
   const image1 = about[0].image.data.attributes.url;
   const image2 = about[1].image.data.attributes.url;
+  // console.log("about", about);
   return (
     <div style={{ background: "#E5E5E5" }}>
       <Container>

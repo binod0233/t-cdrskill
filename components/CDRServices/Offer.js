@@ -50,6 +50,7 @@ const Offer = ({ offers }) => {
       alt: `Economical Rates`,
     },
   ];
+  // console.log(offers.offer);
   return (
     <div>
       <Container>

@@ -12,6 +12,7 @@ const Disclaimer = ({ disclaimerRes }) => {
     (router.asPath === "/" ? "" : router.asPath)
   ).split("?")[0];
   const { content, seo, shared } = disclaimerRes;
+  // console.log("disclaimer", disclaimerRes);
   return (
     <div>
       {/* <Head>
@@ -44,6 +45,7 @@ export const getStaticProps = async () => {
     props: {
       disclaimerRes: disclaimerRes?.data?.attributes || "",
     },
+    
   };
 };
 

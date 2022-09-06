@@ -12,6 +12,7 @@ const ContactUs = ({ contactRes }) => {
     (router.asPath === "/" ? "" : router.asPath)
   ).split("?")[0];
   const { hero, seo, shared } = contactRes;
+  // console.log("contact", contactRes);
   return (
     <div>
       {/* <Head>

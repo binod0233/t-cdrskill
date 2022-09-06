@@ -63,7 +63,7 @@ export const getStaticProps = async () => {
     props: {
       plaRes: plaRes?.data?.attributes || "",
     },
-    revalidate: 1,
+    
   };
 };
 
