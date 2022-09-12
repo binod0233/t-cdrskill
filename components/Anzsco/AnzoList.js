@@ -162,7 +162,6 @@ const AnzoList = () => {
       link: "/anzsco-codes/anzsco-313212-telecommunication-field-engineer",
     },
 
-
     {
       image: "/images/Anzsco/naval-technician.png",
       title: "NAVAL ARCHITECT",
@@ -193,9 +192,20 @@ const AnzoList = () => {
       code: "ANZSCO CODE: 312999",
       link: "/anzsco-codes/anzsco-312999-engineering-technician",
     },
+    {
+      image: "/images/Anzsco/agricultural engineer.png",
+      title: "Agriculture Engineer",
+      code: "ANZSCO CODE: 233912",
+      link: "/anzsco-codes/anzsco-233912-agricultural-engineer",
+    },
+    {
+      image: "/images/Anzsco/electrical-technician.png",
+      title: "Electrical Engineering Technician",
+      code: "ANZSCO CODE: 312312",
+      link: "/anzsco-codes/anzsco-312312-electrical-engineering-technician",
+    },
   ];
 
-  
   const [anzoList, setAnzoList] = React.useState(anzos);
   const searchAnzo = (keyword) => {
     let tempAnzo = anzos.filter((s) => s.title.includes(keyword));
@@ -203,7 +213,7 @@ const AnzoList = () => {
   };
   return (
     <Container>
-      <SearchBox 
+      <SearchBox
         searchAnzo={searchAnzo}
         place="Search by Engineering Professions"
       />
