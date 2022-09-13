@@ -1718,7 +1718,7 @@ const SpecificAnzsco = ({ fieldRes }) => {
     materialsEngineer: {
       title: `ANZSCO 233112-Materials Engineer.`,
       titleDescription: `Materials engineers design chemical process systems for processes such as removing and separating components, effecting chemical changes, transferring heat, transferring heat, testing and evaluating fuels. Materials engineers communicate with material manufacturers during the discovery and assessment of materials appropriate for specific product applications. It is possible that registration or licensing will be required. `,
-      image: `/images/SpecificAnzsco/biomedicalEngineer.png`,
+      image: `/images/SpecificAnzsco/materialsEngineer.png`,
       skillTitle: `Skill level for Materials Engineer:`,
       skillDescription: `Level 1 or Equivalent.`,
       secondTitle: `Skill Assessment Authority of Materials Engineer`,
@@ -2656,7 +2656,7 @@ const SpecificAnzsco = ({ fieldRes }) => {
       hero2ButtonName: `Contact an Expert`,
     },
     civilengineeringTechnician: {
-      title: `ANZSCO 312211-Civil Engineering Draftsperson..`,
+      title: `ANZSCO 312211-Civil Engineering Technicians..`,
       titleDescription: `Civil Engineering Technicians direct and carry out laboratory experiments and fieldwork. Civil Engineering Technicians collect data for traffic surveys and conduct field.It is possible that registration or licensing will be required.`,
       image: `/images/SpecificAnzsco/civilengineeringTechnician.png`,
       skillTitle: `Skill Level`,
@@ -5078,7 +5078,7 @@ const SpecificAnzsco = ({ fieldRes }) => {
           />
         </>
       )}
-      {anzsco === "anzsco-313212-telecommunication-network-engineers" && (
+      {anzsco === "anzsco-263312-network-telecommunication-engineers" && (
         <>
           <Section1
             title={allData.telecommunicationsnetworkEngineer.title}
@@ -6462,7 +6462,6 @@ export async function getStaticProps({ params }) {
 
   return {
     props: { fieldRes: fieldRes || "" },
-    
   };
 }
 
