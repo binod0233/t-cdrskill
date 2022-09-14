@@ -93,7 +93,7 @@ const Hero = ({ title, details }) => {
                     marginRight: "5px",
                     padding: "3px 7px",
                   }}
-                  onClick={() => Chatra("openChat", true)}
+                  onClick={() => LC_API.open_chat_window()}
                 >
                   Download
                 </Button>
