@@ -51,16 +51,9 @@ const Hero = ({ title, details }) => {
                     marginLeft: "20px",
                     border: "none",
                   }}
-                  // onClick={() => Chatra("openChat", true)}
+                  onClick={() => LC_API.open_chat_window()}
                 >
-                  <div data-id="14520894" className="livechat_button">
-                    <a
-                      href="https://www.livechat.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_14520894"
-                      rel="nofollow"
-                    >
-                      Chat with us
-                    </a>
-                  </div>
+                  Chat with us
                 </Button>
               </>
             </Row>

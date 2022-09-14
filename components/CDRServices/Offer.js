@@ -119,7 +119,8 @@ const Offer = ({ offers }) => {
                 border: "none",
                 outline: "none",
               }}
-              onClick={() => Chatra("openChat", true)}
+              // onClick={() => Chatra("openChat", true)}
+              onClick={() => LC_API.open_chat_window()}
             >
               Get Free Consultation
             </button>

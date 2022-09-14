@@ -187,7 +187,7 @@ const OurServices = ({ ourServices }) => {
                 {d.data}{" "}
               </p>
               <div className="d-flex justify-content-center">
-                <Button onClick={() => Chatra("openChat", true)}>
+                <Button onClick={() => LC_API.open_chat_window()}>
                   Get Service
                 </Button>
               </div>

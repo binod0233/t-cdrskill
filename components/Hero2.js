@@ -1,9 +1,9 @@
 import Chatra from "@chatra/chatra";
 import React from "react";
 import { Button, Container, Row } from "react-bootstrap";
-import {useRouter} from 'next/router'
+import { useRouter } from "next/router";
 const Hero2 = ({ title, data, buttonName, link }) => {
-  const router = useRouter()
+  const router = useRouter();
   return (
     <div className="acceptedBackgrounded ">
       <Container className="pt-3">
@@ -24,7 +24,8 @@ const Hero2 = ({ title, data, buttonName, link }) => {
             onClick={() => {
               if (link) router.push(link);
               else {
-                Chatra("openChat", true);
+                // Chatra("openChat", true);
+                LC_API.open_chat_window();
               }
             }}
           >

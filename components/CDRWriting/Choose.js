@@ -24,7 +24,7 @@ const Choose = ({ data }) => {
                 border: "none",
                 outline: "none",
               }}
-              onClick={() => Chatra("openChat", true)}
+              onClick={() => LC_API.open_chat_window()}
             >
               Check Our Pricing
             </button>
