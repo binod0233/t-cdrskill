@@ -364,7 +364,7 @@ const PricingPlan = ({ plan }) => {
                     Delivery within 15 Days
                   </Typography>
                   <Button
-                    onClick={() => Chatra("openChat", true)}
+                    onClick={() => LC_API.open_chat_window()}
                     variant="contained"
                     color="success"
                     size="large"
@@ -575,7 +575,7 @@ const PricingPlan = ({ plan }) => {
                     Delivery within 10 Days
                   </Typography>
                   <Button
-                    onClick={() => Chatra("openChat", true)}
+                    onClick={() => LC_API.open_chat_window()}
                     variant="contained"
                     size="large"
                     disableElevation
@@ -785,7 +785,7 @@ const PricingPlan = ({ plan }) => {
                     Delivery within 7 Days
                   </Typography>
                   <Button
-                    onClick={() => Chatra("openChat", true)}
+                    onClick={() => LC_API.open_chat_window()}
                     variant="contained"
                     size="large"
                     color="error"
@@ -993,7 +993,7 @@ const PricingPlan = ({ plan }) => {
                       Delivery within 15 Days
                     </Typography>
                     <Button
-                      onClick={() => Chatra("openChat", true)}
+                      onClick={() => LC_API.open_chat_window()}
                       variant="contained"
                       size="large"
                       color="secondary"
