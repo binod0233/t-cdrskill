@@ -84,7 +84,7 @@ const Steps = ({ stepData }) => {
                   fontWeight: "700",
                   textDecoration: "none",
                 }}
-                onClick={() => Chatra("openChat", true)}
+                onClick={() => LC_API.open_chat_window()}
               >
                 Get Started <ArrowForwardIcon />
               </div>
@@ -160,7 +160,7 @@ const Steps = ({ stepData }) => {
                     fontWeight: "700",
                     textDecoration: "none",
                   }}
-                  onClick={() => Chatra("openChat", true)}
+                  onClick={() => LC_API.open_chat_window()}
                 >
                   Get Started <ArrowForwardIcon />
                 </div>
@@ -209,7 +209,7 @@ const Steps = ({ stepData }) => {
                   fontWeight: "700",
                   textDecoration: "none",
                 }}
-                onClick={() => Chatra("openChat", true)}
+                onClick={() => LC_API.open_chat_window()}
               >
                 Get Started <ArrowForwardIcon />
               </div>
@@ -322,7 +322,7 @@ const Steps = ({ stepData }) => {
                     fontWeight: "700",
                     textDecoration: "none",
                   }}
-                  onClick={() => Chatra("openChat", true)}
+                  onClick={() => LC_API.open_chat_window()}
                 >
                   Get Started <ArrowForwardIcon />
                 </div>
@@ -404,7 +404,7 @@ const Steps = ({ stepData }) => {
                   fontWeight: "700",
                   textDecoration: "none",
                 }}
-                onClick={() => Chatra("openChat", true)}
+                onClick={() => LC_API.open_chat_window()}
               >
                 Get Started <ArrowForwardIcon />
               </div>
@@ -481,7 +481,7 @@ const Steps = ({ stepData }) => {
                     fontWeight: "700",
                     textDecoration: "none",
                   }}
-                  onClick={() => Chatra("openChat", true)}
+                  onClick={() => LC_API.open_chat_window()}
                 >
                   Get Started <ArrowForwardIcon />
                 </div>
@@ -528,7 +528,7 @@ const Steps = ({ stepData }) => {
                   fontWeight: "700",
                   textDecoration: "none",
                 }}
-                onClick={() => Chatra("openChat", true)}
+                onClick={() => LC_API.open_chat_window()}
               >
                 Get Started <ArrowForwardIcon />
               </div>
@@ -639,7 +639,7 @@ const Steps = ({ stepData }) => {
                     fontWeight: "700",
                     textDecoration: "none",
                   }}
-                  onClick={() => Chatra("openChat", true)}
+                  onClick={() => LC_API.open_chat_window()}
                 >
                   Get Started <ArrowForwardIcon />
                 </div>
@@ -717,7 +717,7 @@ const Steps = ({ stepData }) => {
               fontWeight: "700",
               textDecoration: "none",
             }}
-            onClick={() => Chatra("openChat", true)}
+            onClick={() => LC_API.open_chat_window()}
           >
             Get Started <ArrowForwardIcon />
           </div>
@@ -758,7 +758,7 @@ const Steps = ({ stepData }) => {
               fontWeight: "700",
               textDecoration: "none",
             }}
-            onClick={() => Chatra("openChat", true)}
+            onClick={() => LC_API.open_chat_window()}
           >
             Get Started <ArrowForwardIcon />
           </div>
@@ -860,7 +860,7 @@ const Steps = ({ stepData }) => {
               fontWeight: "700",
               textDecoration: "none",
             }}
-            onClick={() => Chatra("openChat", true)}
+            onClick={() => LC_API.open_chat_window()}
           >
             Get Started <ArrowForwardIcon />
           </div>
@@ -899,7 +899,7 @@ const Steps = ({ stepData }) => {
               fontWeight: "700",
               textDecoration: "none",
             }}
-            onClick={() => Chatra("openChat", true)}
+            onClick={() => LC_API.open_chat_window()}
           >
             Get Started <ArrowForwardIcon />
           </div>

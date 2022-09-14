@@ -16,12 +16,12 @@ const Hero = ({ title, details }) => {
     e.preventDefault();
 
     emailjs
-    .sendForm(
-      "service_swmc1ha",
-      "template_u77tatf",
-      form.current,
-      "hWJYhr4QPZh-TxVMc"
-    )
+      .sendForm(
+        "service_swmc1ha",
+        "template_u77tatf",
+        form.current,
+        "hWJYhr4QPZh-TxVMc"
+      )
       .then(
         (result) => {
           alert("Email sent.");
@@ -51,9 +51,9 @@ const Hero = ({ title, details }) => {
                     marginLeft: "20px",
                     border: "none",
                   }}
-                  onClick={() => Chatra("openChat", true)}
+                  onClick={() => LC_API.open_chat_window()}
                 >
-                  Contact Us
+                  Chat with us
                 </Button>
               </>
             </Row>
@@ -67,40 +67,41 @@ const Hero = ({ title, details }) => {
                 >
                   +61 481 615 807
                 </a>
-
               </strong>
             </p>
-            <div className='d-flex justify-content-center justify-content-md-start'>
-            <div
-            className="heroInputButton"
-              style={{
-                width: "350px",
-                height: "35px",
-                background: "white",
-                borderRadius: "5px",
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "center",
-                paddingLeft: "5px",
-              }}
-            >
-              <div className="p-2 listText" style={{ color: "#203546" }}>
-                Do you want Free CDR Sample?
-              </div>
-              <Button
-              className='listText'
-                style={{ float: "right",marginRight:'5px', padding: "3px 7px" }}
-                onClick={() => Chatra("openChat", true)}
+            <div className="d-flex justify-content-center justify-content-md-start">
+              <div
+                className="heroInputButton"
+                style={{
+                  width: "350px",
+                  height: "35px",
+                  background: "white",
+                  borderRadius: "5px",
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  paddingLeft: "5px",
+                }}
               >
-                Download
-              </Button>
+                <div className="p-2 listText" style={{ color: "#203546" }}>
+                  Do you want Free CDR Sample?
+                </div>
+                <Button
+                  className="listText"
+                  style={{
+                    float: "right",
+                    marginRight: "5px",
+                    padding: "3px 7px",
+                  }}
+                  onClick={() => Chatra("openChat", true)}
+                >
+                  Download
+                </Button>
+              </div>
             </div>
-            </div>
-           
           </Col>
 
           <Col className="mt-5 formContainerColumn" md={6} xs={12}>
-           
             <Form
               ref={form}
               onSubmit={submitFormhandler}
@@ -109,7 +110,6 @@ const Hero = ({ title, details }) => {
               <div className="d-flex flex-column justify-content-center align-items-center">
                 <h2>Get Instant help</h2>
               </div>
-              
 
               <Form.Group className="mb-3" controlId="fullName">
                 <Form.Control

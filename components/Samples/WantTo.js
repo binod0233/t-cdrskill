@@ -22,7 +22,7 @@ const WantTo = ({ data }) => {
               border: "none",
               outline: "none",
             }}
-            onClick={() => Chatra("openChat", true)}
+            onClick={() => LC_API.open_chat_window()}
           >
             Contact an Expert
           </button>
