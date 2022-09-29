@@ -70,6 +70,7 @@ export const getStaticProps = async () => {
   return {
     props: {
       sampleRes: sampleRes?.data?.attributes || "",
+      revalidate: 1,
     },
   };
 };
