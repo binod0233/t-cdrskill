@@ -103,7 +103,7 @@ export const getStaticProps = async () => {
   // const { NEXT_STRAPI_API_URL } = process.env;
 
   const stage2 = await fetch(
-    "https://cdrskill.herokuapp.com/api/s-stage2?populate=deep"
+    "https://cdrskills.herokuapp.com/api/s-stage2?populate=deep"
   );
 
   const stageRes = await stage2.json();
@@ -112,7 +112,6 @@ export const getStaticProps = async () => {
     props: {
       stageRes: stageRes?.data?.attributes || "",
     },
-    
   };
 };
 

@@ -54,7 +54,7 @@ export const getStaticProps = async () => {
   // const { NEXT_STRAPI_API_URL } = process.env;
 
   const testimonial = await fetch(
-    "   https://cdrskill.herokuapp.com/api/testimonial?populate=deep"
+    "   https://cdrskills.herokuapp.com/api/testimonial?populate=deep"
   );
 
   const testimonialRes = await testimonial.json();
@@ -63,7 +63,6 @@ export const getStaticProps = async () => {
     props: {
       testimonialRes: testimonialRes?.data?.attributes || "",
     },
-    
   };
 };
 

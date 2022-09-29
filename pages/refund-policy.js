@@ -50,7 +50,7 @@ export const getStaticProps = async () => {
   // const { NEXT_STRAPI_API_URL } = process.env;
 
   const refundPolicy = await fetch(
-    "   https://cdrskill.herokuapp.com/api/refund-policy?populate=deep"
+    "   https://cdrskills.herokuapp.com/api/refund-policy?populate=deep"
   );
 
   const refundRes = await refundPolicy.json();
@@ -59,7 +59,6 @@ export const getStaticProps = async () => {
     props: {
       refundRes: refundRes?.data?.attributes || "",
     },
-    
   };
 };
 

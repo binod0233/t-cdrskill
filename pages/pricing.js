@@ -42,7 +42,7 @@ export const getStaticProps = async () => {
   // const { NEXT_STRAPI_API_URL } = process.env;
 
   const pricing = await fetch(
-    "   https://cdrskill.herokuapp.com/api/pricing?populate=deep "
+    "   https://cdrskills.herokuapp.com/api/pricing?populate=deep "
   );
 
   const pricingRes = await pricing.json();
@@ -51,7 +51,6 @@ export const getStaticProps = async () => {
     props: {
       pricingRes: pricingRes?.data?.attributes || "",
     },
-    
   };
 };
 

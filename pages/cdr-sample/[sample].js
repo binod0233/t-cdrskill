@@ -1298,7 +1298,7 @@ Reviewing Service for engineers in Australia."
 
 export async function getStaticPaths() {
   const samples = await fetch(
-    "https://cdrskill.herokuapp.com/api/cdrsamples?populate=deep"
+    "https://cdrskills.herokuapp.com/api/cdrsamples?populate=deep"
   );
   const allSamples = await samples.json();
   return {
@@ -1313,13 +1313,12 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const sample = await fetch(
-    `https://cdrskill.herokuapp.com/api/cdrsamples/${params.sample}?populate=deep`
+    `https://cdrskills.herokuapp.com/api/cdrsamples/${params.sample}?populate=deep`
   );
   const sampleData = await sample.json();
 
   return {
     props: { sampleData },
-    
   };
 }
 

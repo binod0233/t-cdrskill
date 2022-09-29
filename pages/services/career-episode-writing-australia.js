@@ -58,7 +58,7 @@ export const getStaticProps = async () => {
   // const { NEXT_STRAPI_API_URL } = process.env;
 
   const career = await fetch(
-    "https://cdrskill.herokuapp.com/api/s-career?populate=deep"
+    "https://cdrskills.herokuapp.com/api/s-career?populate=deep"
   );
 
   const careerRes = await career.json();
@@ -67,7 +67,6 @@ export const getStaticProps = async () => {
     props: {
       careerRes: careerRes?.data?.attributes || "",
     },
-    
   };
 };
 

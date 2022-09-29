@@ -126,7 +126,7 @@ export const getStaticProps = async () => {
   // const { NEXT_STRAPI_API_URL } = process.env;
 
   const cpd = await fetch(
-    "https://cdrskill.herokuapp.com/api/s-cpd-writing?populate=deep"
+    "https://cdrskills.herokuapp.com/api/s-cpd-writing?populate=deep"
   );
 
   const cpdRes = await cpd.json();
@@ -135,7 +135,6 @@ export const getStaticProps = async () => {
     props: {
       cpdRes: cpdRes?.data?.attributes || "",
     },
-    
   };
 };
 

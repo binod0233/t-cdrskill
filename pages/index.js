@@ -69,7 +69,7 @@ export const getStaticProps = async () => {
   const landingRes = await landing.json();
 
   const test = await fetch(
-    "https://cdrskill.herokuapp.com/api/cdrsamples?populate=deep"
+    "https://cdrskills.herokuapp.com/api/cdrsamples?populate=deep"
   );
   const testRes = await test.json();
 
@@ -78,7 +78,6 @@ export const getStaticProps = async () => {
       landingRes: landingRes?.data?.attributes,
       test: testRes,
     },
-    
   };
 };
 

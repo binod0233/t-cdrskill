@@ -65,7 +65,7 @@ export const getStaticProps = async () => {
   // const { NEXT_STRAPI_API_URL } = process.env;
 
   const privacyPolicy = await fetch(
-    "   https://cdrskill.herokuapp.com/api/privacy-policy?populate=deep "
+    "   https://cdrskills.herokuapp.com/api/privacy-policy?populate=deep "
   );
 
   const privacyRes = await privacyPolicy.json();
@@ -74,7 +74,6 @@ export const getStaticProps = async () => {
     props: {
       privacyRes: privacyRes?.data?.attributes || "",
     },
-    
   };
 };
 

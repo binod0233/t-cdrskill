@@ -54,7 +54,7 @@ export const getStaticProps = async () => {
   // const { NEXT_STRAPI_API_URL } = process.env;
 
   const plagiarism = await fetch(
-    "https://cdrskill.herokuapp.com/api/s-plagiarism?populate=deep"
+    "https://cdrskills.herokuapp.com/api/s-plagiarism?populate=deep"
   );
 
   const plaRes = await plagiarism.json();
@@ -63,7 +63,6 @@ export const getStaticProps = async () => {
     props: {
       plaRes: plaRes?.data?.attributes || "",
     },
-    
   };
 };
 

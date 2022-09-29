@@ -62,7 +62,7 @@ export const getStaticProps = async () => {
   // const { NEXT_STRAPI_API_URL } = process.env;
 
   const sample = await fetch(
-    "https://cdrskill.herokuapp.com/api/cdr-sample?populate=deep"
+    "https://cdrskills.herokuapp.com/api/cdr-sample?populate=deep"
   );
 
   const sampleRes = await sample.json();
@@ -71,7 +71,6 @@ export const getStaticProps = async () => {
     props: {
       sampleRes: sampleRes?.data?.attributes || "",
     },
-    
   };
 };
 

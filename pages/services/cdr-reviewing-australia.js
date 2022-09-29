@@ -114,7 +114,7 @@ export const getStaticProps = async () => {
   // const { NEXT_STRAPI_API_URL } = process.env;
 
   const reviewing = await fetch(
-    "https://cdrskill.herokuapp.com/api/s-reviewing?populate=deep"
+    "https://cdrskills.herokuapp.com/api/s-reviewing?populate=deep"
   );
 
   const revRes = await reviewing.json();
@@ -123,7 +123,6 @@ export const getStaticProps = async () => {
     props: {
       revRes: revRes?.data?.attributes || "",
     },
-    
   };
 };
 

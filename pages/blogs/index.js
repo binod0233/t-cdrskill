@@ -445,13 +445,13 @@ const Blogs = ({ resBlogData }) => {
 
 export async function getStaticProps({ params }) {
   const blog = await fetch(
-    `https://cdrskill.herokuapp.com/api/blogs?populate=deep`
+    `https://cdrskills.herokuapp.com/api/blogs?populate=deep`
   );
   const blogData = await blog.json();
 
   return {
     props: { resBlogData: blogData?.data },
-    
+    revalidate: 1,
   };
 }
 export default Blogs;

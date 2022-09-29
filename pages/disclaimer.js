@@ -36,7 +36,7 @@ export const getStaticProps = async () => {
   // const { NEXT_STRAPI_API_URL } = process.env;
 
   const disclaimer = await fetch(
-    "    https://cdrskill.herokuapp.com/api/disclaimer?populate=deep  "
+    "    https://cdrskills.herokuapp.com/api/disclaimer?populate=deep  "
   );
 
   const disclaimerRes = await disclaimer.json();
@@ -45,7 +45,6 @@ export const getStaticProps = async () => {
     props: {
       disclaimerRes: disclaimerRes?.data?.attributes || "",
     },
-    
   };
 };
 
