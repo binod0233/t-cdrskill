@@ -649,7 +649,9 @@ const SpecificBlog = ({ resBlogData, resData }) => {
 };
 
 export async function getStaticPaths() {
-  const blog = await fetch("https://cdrskills.herokuapp.com/api/blogs");
+  const blog = await fetch(
+    "https://cdrskillassessment.cdrsites.rocks/api/blogs"
+  );
   const allBlogs = await blog.json();
   return {
     paths: allBlogs.data.map((blog) => ({
@@ -663,11 +665,11 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const blog = await fetch(
-    `https://cdrskills.herokuapp.com/api/blogs/${params.slug}?populate=deep`
+    `https://cdrskillassessment.cdrsites.rocks/api/blogs/${params.slug}?populate=deep`
   );
   const blogData = await blog.json();
   const blogs = await fetch(
-    `https://cdrskills.herokuapp.com/api/blogs?populate=deep`
+    `https://cdrskillassessment.cdrsites.rocks/api/blogs?populate=deep`
   );
   const blogDatas = await blogs.json();
 

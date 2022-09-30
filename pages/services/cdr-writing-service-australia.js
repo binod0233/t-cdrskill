@@ -88,7 +88,7 @@ export const getStaticProps = async () => {
   // const { NEXT_STRAPI_API_URL } = process.env;
 
   const cdrWriting = await fetch(
-    " https://cdrskills.herokuapp.com/api/s-cdr-writing?populate=deep "
+    " https://cdrskillassessment.cdrsites.rocks/api/s-cdr-writing?populate=deep "
   );
 
   const cdrRes = await cdrWriting.json();

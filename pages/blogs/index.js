@@ -445,7 +445,7 @@ const Blogs = ({ resBlogData }) => {
 
 export async function getStaticProps({ params }) {
   const blog = await fetch(
-    `https://cdrskills.herokuapp.com/api/blogs?populate=deep`
+    `https://cdrskillassessment.cdrsites.rocks/api/blogs?populate=deep`
   );
   const blogData = await blog.json();
 

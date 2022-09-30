@@ -27,7 +27,7 @@ const Disclaimer = ({ disclaimerRes }) => {
 };
 export const getStaticProps = async () => {
   const disclaimer = await fetch(
-    "    https://cdrskills.herokuapp.com/api/disclaimer?populate=deep  "
+    "    https://cdrskillassessment.cdrsites.rocks/api/disclaimer?populate=deep  "
   );
 
   const disclaimerRes = await disclaimer.json();

@@ -36,7 +36,7 @@ export const getStaticProps = async () => {
   // const { NEXT_STRAPI_API_URL } = process.env;
 
   const agent = await fetch(
-    "    https://cdrskills.herokuapp.com/api/our-agent?populate=deep "
+    "    https://cdrskillassessment.cdrsites.rocks/api/our-agent?populate=deep "
   );
 
   const agentRes = await agent.json();

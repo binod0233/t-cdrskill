@@ -201,7 +201,7 @@ export const getStaticProps = async () => {
   // const { NEXT_STRAPI_API_URL } = process.env;
 
   const faq = await fetch(
-    "    https://cdrskills.herokuapp.com/api/faq?populate=deep  "
+    "    https://cdrskillassessment.cdrsites.rocks/api/faq?populate=deep  "
   );
 
   const disclaimerRes = await faq.json();

@@ -58,7 +58,7 @@ export const getStaticProps = async () => {
   // const { NEXT_STRAPI_API_URL } = process.env;
 
   const stage1 = await fetch(
-    "https://cdrskills.herokuapp.com/api/s-stage1?populate=deep"
+    "https://cdrskillassessment.cdrsites.rocks/api/s-stage1?populate=deep"
   );
 
   const stageRes = await stage1.json();
