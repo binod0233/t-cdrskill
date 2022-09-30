@@ -2,7 +2,6 @@ import React from "react";
 import DIsclaimer from "../components/Disclaimer/DIsclaimer";
 import Hero3 from "../components/FAQ/Hero3";
 import { useRouter } from "next/router";
-import Head from "next/head";
 import Seo from "../components/Seo";
 
 const Disclaimer = ({ disclaimerRes }) => {
@@ -12,14 +11,8 @@ const Disclaimer = ({ disclaimerRes }) => {
     (router.asPath === "/" ? "" : router.asPath)
   ).split("?")[0];
   const { content, seo, shared } = disclaimerRes;
-  // console.log("disclaimer", disclaimerRes);
   return (
     <div>
-      {/* <Head>
-        <title>Disclaimer | CDR Skill Assessment</title>
-        <meta name="description" content="Disclaimer | CDR Skill Assessment" />
-        <link rel="canonical" href={canonicalUrl} />
-      </Head> */}
       <Seo seo={seo} />
       {content ? <DIsclaimer content={content} /> : <DIsclaimer />}
       {shared && (
@@ -33,8 +26,6 @@ const Disclaimer = ({ disclaimerRes }) => {
   );
 };
 export const getStaticProps = async () => {
-  // const { NEXT_STRAPI_API_URL } = process.env;
-
   const disclaimer = await fetch(
     "    https://cdrskills.herokuapp.com/api/disclaimer?populate=deep  "
   );
