@@ -61,7 +61,7 @@ export const getStaticProps = async () => {
 
   return {
     props: {
-      testimonialRes: testimonialRes?.data?.attributes || "",
+      testimonialRes: testimonialRes?.data?.attributes,
     },
     revalidate: 1,
   };
