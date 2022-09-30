@@ -78,6 +78,7 @@ export const getStaticProps = async () => {
       landingRes: landingRes?.data?.attributes,
       test: testRes,
     },
+    revalidate: 1,
   };
 };
 

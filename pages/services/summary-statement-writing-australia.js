@@ -63,6 +63,7 @@ export const getStaticProps = async () => {
   return {
     props: {
       summaryRes: summaryRes?.data?.attributes || "",
+      revalidate: 1,
     },
   };
 };

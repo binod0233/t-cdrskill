@@ -1319,6 +1319,7 @@ export async function getStaticProps({ params }) {
 
   return {
     props: { sampleData },
+    revalidate: 1,
   };
 }
 

@@ -45,6 +45,7 @@ export const getStaticProps = async () => {
   return {
     props: {
       contactRes: contactRes?.data?.attributes || "",
+      revalidate: 1,
     },
   };
 };

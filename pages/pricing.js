@@ -51,6 +51,7 @@ export const getStaticProps = async () => {
     props: {
       pricingRes: pricingRes?.data?.attributes || "",
     },
+    revalidate: 1,
   };
 };
 

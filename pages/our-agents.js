@@ -45,6 +45,7 @@ export const getStaticProps = async () => {
     props: {
       agentRes: agentRes?.data?.attributes || "",
     },
+    revalidate: 1,
   };
 };
 

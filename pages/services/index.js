@@ -86,6 +86,7 @@ export const getStaticProps = async () => {
   return {
     props: {
       serviceRes: serviceRes?.data?.attributes || "",
+      revalidate: 1,
     },
   };
 };

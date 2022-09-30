@@ -6462,6 +6462,7 @@ export async function getStaticProps({ params }) {
 
   return {
     props: { fieldRes: fieldRes || "" },
+    revalidate: 1,
   };
 }
 

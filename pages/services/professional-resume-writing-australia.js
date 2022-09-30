@@ -116,6 +116,7 @@ export const getStaticProps = async () => {
   return {
     props: {
       cvRes: cvRes?.data?.attributes || "",
+      revalidate: 1,
     },
   };
 };

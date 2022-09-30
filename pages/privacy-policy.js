@@ -74,6 +74,7 @@ export const getStaticProps = async () => {
     props: {
       privacyRes: privacyRes?.data?.attributes || "",
     },
+    revalidate: 1,
   };
 };
 
