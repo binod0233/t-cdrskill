@@ -9,7 +9,7 @@ import Whatdoes from "../../components/CDRWriting/Whatdoes";
 import Hero from "../../components/Hero";
 import Hero2 from "../../components/Hero2";
 import Head from "next/head";
-import Script from "next/script";
+import Script from "next/script"; 
 import parse from "html-react-parser";
 import Seo from "../../components/Seo";
 
