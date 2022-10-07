@@ -148,10 +148,7 @@ const Blogs = ({ resBlogData }) => {
                   ...
                 </Card.Text>
                 <Link href={`/blog/${resBlogData[0].attributes.slug}`}>
-                  <Button
-
-                  // href="/blog/8-Common-CDR-Report-Mistakes-Made-by-Engineering-Applicants"
-                  >
+                  <Button>
                     Read More <ArrowForward />
                   </Button>
                 </Link>{" "}
