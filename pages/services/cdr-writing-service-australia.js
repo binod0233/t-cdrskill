@@ -52,16 +52,7 @@ const CDRWriting = ({ cdrRes }) => {
       <Script id="" type="application/ld+json">
         {JSON.stringify(schemaData)}
       </Script>
-      {/* <Head>
-        <title>
-          High-Quality CDR Report Writing Service for Engineers Australia
-        </title>
-        <meta
-          name="description"
-          content="Engineering Applicants seeking the best service provider for CDR Writing? Grab your high-quality CDR Report to get 100 % Approval from Engineers Australia."
-        />
-        <link rel="canonical" href={canonicalUrl} />
-      </Head> */}
+      
       <Seo seo={seo} />
       <Hero title={hero?.title} details={hero && parse(hero.paragraph)} />
       <Section1
