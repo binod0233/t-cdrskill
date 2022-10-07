@@ -9,6 +9,7 @@ import TakeMeToTop from "../components/TakeMeToTop";
 import TagManager from "react-gtm-module";
 import { SSRProvider } from "react-bootstrap";
 import Script from "next/script";
+
 import Chatra from "@chatra/chatra";
 
 let config = {
