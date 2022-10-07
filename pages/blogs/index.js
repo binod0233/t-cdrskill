@@ -29,7 +29,7 @@ const Blogs = ({ resBlogData }) => {
   const handleChange = (event, value) => {
     setPage(value);
   };
-  // console.log(page);
+
   // console.log("strapi data", parse(resBlogData[0].attributes.content));
   const options = [
     { value: "chocolate", label: "Chocolate" },
@@ -98,7 +98,7 @@ const Blogs = ({ resBlogData }) => {
                 }}
               >
                 Read latest blogs about CDR writing, Austrlia Migration & Skill
-                Assessment service from the worldâ€™s top most Blogger.
+                Assessment service from the world’s top most Blogger.
               </div>
               <span>
                 <ShareIcon /> 1300 shares
