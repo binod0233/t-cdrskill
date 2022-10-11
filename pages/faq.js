@@ -172,7 +172,6 @@ const FAQ = () => {
     ],
   };
   return (
-    // eslint-disable-next-line react/jsx-no-comment-textnodes
     <div>
       <Script type="application/ld+json">{JSON.stringify(schemaData)}</Script>
       <Head>
