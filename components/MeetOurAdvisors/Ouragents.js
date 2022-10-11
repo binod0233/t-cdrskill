@@ -1,4 +1,4 @@
-import { WhatsappOutlined } from "@mui/icons-material";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -57,11 +57,11 @@ const Ouragents = ({ agentRes }) => {
           }}
           className="pb-5"
         >
-          {hero && parse(hero.paragraph)}
+          {hero?.paragraph && parse(hero.paragraph)}
         </p>
 
         <Row>
-          {cdr_agents?.data.map((d, index) => (
+          {cdr_agents?.data?.map((d, index) => (
             <Col md={3} className="py-5" key={index}>
               <div
                 style={{
@@ -98,8 +98,14 @@ const Ouragents = ({ agentRes }) => {
                   style={{ backgroundColor: "#38A559", borderRadius: "10px" }}
                   className="px-3 pt-2"
                 >
+                  {/* <a
+                    href={`https://api.whatsapp.com/send?phone=${dataList[index]?.phone}`}
+                    style={{ color: "white", textDecoration: "none" }}
+                  >
+                    <WhatsappOutlined />
+                  </a> */}
                   <a
-                    href={`https://api.whatsapp.com/send?phone=${d.phone}`}
+                    href={`https://api.whatsapp.com/send?phone=${dataList[index]?.phone}`}
                     style={{ color: "white", textDecoration: "none" }}
                   >
                     <h6
@@ -109,8 +115,8 @@ const Ouragents = ({ agentRes }) => {
                         fontWeight: "700",
                       }}
                     >
-                      <WhatsappOutlined />
-                      {d.data}
+                      <WhatsAppIcon />
+                      {dataList[index]?.data}
                     </h6>
                   </a>
                 </div>
